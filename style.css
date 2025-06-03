@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  :root {
+    --bg: #ffffff;
+    --text: #111111;
+    --accent: #0055aa;
+    --nav-bg: #f0f0f0;
+  }
+  
+  body.dark {
+    --bg: #1e1e1e;
+    --text: #e0e0e0;
+    --accent: #3399ff;
+    --nav-bg: #2a2a2a;
+  }
+  
+  header {
+    text-align: center;
+    padding: 4rem 1rem 2rem;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .author {
+    font-size: 1rem;
+    color: var(--accent);
+  }
+  
+  #theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--accent);
+  }
+  
+  .down-arrow {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: var(--accent);
+  }
+  
+  .section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: var(--nav-bg);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .section-nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  main {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  section img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  
+  section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .nav-buttons a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--accent);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--nav-bg);
+    font-size: 0.9rem;
+  }
+  
+  footer .logo {
+    margin-top: 0.5rem;
+    width: 120px;
+    filter: grayscale(100%);
+  }
+  
+  @media (max-width: 600px) {
+    .section-nav {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .nav-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+  
