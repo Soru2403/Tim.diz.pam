@@ -35,29 +35,19 @@ header {
     scroll-snap-align: start;
 }
 
-.header-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
 
 header h1 {
-    flex: 1 1 100%;
     margin: 0 0 0.5rem 0;
     font-size: 2rem;
 }
 
 .author {
-    flex: 1 1 100%;
     margin: 0 0 1.5rem 0;
     font-style: italic;
 }
 
 #theme-toggle {
-    position: absolute;
+    position: fixed; 
     top: 1rem;
     right: 1rem;
     background: transparent;
@@ -65,6 +55,7 @@ header h1 {
     font-size: 1.8rem;
     cursor: pointer;
     color: white;
+    z-index: 1001; 
 }
 
 .down-arrow {
@@ -75,25 +66,11 @@ header h1 {
     left: 50%;
     transform: translateX(-50%);
     text-decoration: none;
+    z-index: 10;
 }
 
 .section-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background: var(--bg-color);
-    padding: 1rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #ccc;
-}
-
-.section-nav a {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: bold;
+    display: none;
 }
 
 .theme {
