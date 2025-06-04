@@ -86,14 +86,14 @@ header::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
   padding: 2rem;
-  min-height: calc(100vh - 4rem); 
-  max-height: calc(100vh - 10rem); 
-  box-sizing: border-box;
-  overflow: hidden; 
   scroll-snap-align: start;
+  min-height: calc(100vh - 4rem);
+  max-height: calc(100vh - 10rem);
+  overflow-y: auto;
+  box-sizing: border-box;
+  justify-content: center;
 }
 
 
@@ -230,9 +230,9 @@ footer img.logo {
 
 @media (max-width: 768px) {
   .theme {
-    min-height: auto;
-    max-height: none;
-    overflow: visible;
+    min-height: auto !important;
+    max-height: none !important;
+    overflow-y: visible !important;
     padding: 1rem;
     justify-content: flex-start;
   }
