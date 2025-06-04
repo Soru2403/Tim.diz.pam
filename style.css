@@ -198,9 +198,18 @@ footer img.logo {
 }
 
 @media (min-width: 1920px) {
-
   .theme {
+    min-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 10rem);
+    overflow-y: auto;
+    justify-content: flex-start;
     padding: 1rem 1rem;
+  }
+
+  .section-content {
+    max-width: 1900px;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 
   .image-block img {
@@ -210,26 +219,6 @@ footer img.logo {
 
   .text-block p {
     font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .section-content {
-    max-width: 1400px;
-  }
-  .theme {
-    min-height: calc(100vh - 4rem);
-    max-height: calc(100vh - 10rem);
-    overflow-y: auto;
-    justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1920px) {
-  .section-content {
-    max-width: 1900px;
-    padding-left: 3vw;
-    padding-right: 3vw;
   }
 }
 
