@@ -227,3 +227,32 @@ footer img.logo {
     padding-right: 3vw;
   }
 }
+
+@media (max-width: 768px) {
+  .theme {
+    min-height: auto;
+    max-height: none;
+    overflow: visible;
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .theme h2 {
+    text-align: left;
+  }
+  
+  .section-content {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  
+  .image-block,
+  .text-block {
+    flex: 1 1 100%;
+  }
+  
+  .nav-buttons {
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+}
