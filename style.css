@@ -86,12 +86,16 @@ header::before {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
-  padding: 2rem 2rem;
-  scroll-snap-align: start;
-  min-height: 100vh;
+  padding: 2rem;
+  min-height: calc(100vh - 10rem); 
+  max-height: calc(100vh - 10rem); 
   box-sizing: border-box;
+  overflow: hidden; 
+  scroll-snap-align: start;
 }
+
 
 .theme h2 {
   font-size: 2.2rem;
