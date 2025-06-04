@@ -87,7 +87,7 @@ header::before {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
   scroll-snap-align: start;
   min-height: 100vh;
   box-sizing: border-box;
@@ -95,7 +95,7 @@ header::before {
 
 .theme h2 {
   font-size: 2.2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -109,6 +109,7 @@ header::before {
   max-width: 1200px;
   padding: 0 2rem;
   box-sizing: border-box;
+  min-height: 600px;
 }
 
 .image-block {
@@ -135,12 +136,13 @@ header::before {
 
 .text-block p {
   font-size: 1.3rem;
+  margin-bottom: 0;
 }
 
 .nav-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-top: auto;
 }
 
