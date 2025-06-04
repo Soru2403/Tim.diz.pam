@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.9;
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
@@ -24,7 +24,7 @@ body {
   header {
     position: relative;
     height: 100vh;
-    background-image: url('images/Firts_image.jpg');
+    background-image: url('images/First_image.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
