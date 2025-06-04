@@ -89,7 +89,7 @@ header::before {
   justify-content: center;
   gap: 1rem;
   padding: 2rem;
-  min-height: calc(100vh - 10rem); 
+  min-height: calc(100vh - 4rem); 
   max-height: calc(100vh - 10rem); 
   box-sizing: border-box;
   overflow: hidden; 
