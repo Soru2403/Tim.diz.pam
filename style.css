@@ -89,11 +89,10 @@ header::before {
   gap: 1rem;
   padding: 2rem;
   scroll-snap-align: start;
-  min-height: calc(100vh - 4rem);
-  max-height: calc(100vh - 10rem);
-  overflow-y: auto;
   box-sizing: border-box;
+  margin-bottom: 4rem;
   justify-content: center;
+  min-height: 100vh;
 }
 
 
@@ -218,6 +217,12 @@ footer img.logo {
   .section-content {
     max-width: 1400px;
   }
+  .theme {
+    min-height: calc(100vh - 4rem);
+    max-height: calc(100vh - 10rem);
+    overflow-y: auto;
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -228,31 +233,3 @@ footer img.logo {
   }
 }
 
-@media (max-width: 768px) {
-  .theme {
-    min-height: auto !important;
-    max-height: none !important;
-    overflow-y: visible !important;
-    padding: 1rem;
-    justify-content: flex-start;
-  }
-  
-  .theme h2 {
-    text-align: left;
-  }
-  
-  .section-content {
-    flex-direction: column;
-    padding: 0 1rem;
-  }
-  
-  .image-block,
-  .text-block {
-    flex: 1 1 100%;
-  }
-  
-  .nav-buttons {
-    justify-content: space-around;
-    margin-top: 1rem;
-  }
-}
