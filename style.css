@@ -193,3 +193,26 @@ footer img.logo {
     justify-content: space-around;
   }
 }
+
+@media (min-width: 2000px) {
+  .theme {
+    padding: 2rem 4rem 1rem;
+  }
+
+  .section-content {
+    max-width: 1600px;
+    gap: 3rem;
+  }
+
+  .image-block {
+    flex: 0 0 75%;
+  }
+
+  .image-block img {
+    max-height: 800px;
+  }
+
+  .text-block p {
+    font-size: 1.5rem;
+  }
+}
