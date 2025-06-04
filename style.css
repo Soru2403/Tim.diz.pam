@@ -194,22 +194,19 @@ footer img.logo {
   }
 }
 
-@media (min-width: 2000px) {
-  .theme {
-    padding: 2rem 4rem 1rem;
-  }
-
+@media (min-width: 1920px) {
   .section-content {
     max-width: 1600px;
-    gap: 3rem;
+    padding: 0 1rem;
   }
 
-  .image-block {
-    flex: 0 0 75%;
+  .theme {
+    padding: 1rem 1rem;
   }
 
   .image-block img {
-    max-height: 800px;
+    max-width: 100%;
+    border-radius: 1.2rem;
   }
 
   .text-block p {
